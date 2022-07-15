@@ -1,0 +1,158 @@
+.envios{
+    h1 {
+        background-color: cadetblue;
+      }
+      .grid {
+        display: grid;
+        grid-template-areas:
+          "nav header header"
+          "main main main"
+          "footer footer footer";
+        background-color: grey;
+      }
+      .header {
+        background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
+        background-position: center;
+        background-size: cover;
+      }
+      
+      .main {
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        grid-area: main;
+        flex-wrap: wrap;
+        min-width: 300px;
+        align-content: stretch;
+      }
+      
+      .tabla{
+        display: flex;
+        align-content: center;
+      }
+      
+      .nav{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        grid-area: nav;
+        width: min-content;
+        animation-name: cambioColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      
+      ul li {
+        color: black;
+        margin: 8px;
+      }
+      
+      /* 2. Selector de tipo clase */
+      .tituloTabla {
+        color: black;
+        background-color: wheat;
+        font-size: 25px;
+        padding: 5px;
+      }
+      
+      .img-tabla{
+        background-color: wheat;
+        font-size: 23px;
+        text-align: center;
+        width: 500px;
+      }
+      
+      .imagenes {
+        background-color: wheat;
+        font-size: 23px;
+        text-align: center;
+      }
+      
+      .footer {
+        background-color: gainsboro;
+        color: lightblue;
+        padding: 10px;
+        font-weight: bolder;
+        grid-area: footer;
+      }
+      
+      /* Selector de tipo ID */
+      .datosTabla {
+        padding: 8px;
+        background-color: wheat;
+        font-size: 23px;
+        text-align: center;
+      }
+      
+      
+      /*nomenclatura.
+      1. camelcase = LetraGrandeOscura
+      2. snake_case = Letra_grande_oscura
+      3. kebab-case = letra-grande-oscura 
+       */
+      
+      /* ---------- CONTACTO HTML------------ */
+      .formulario{
+        padding: 8px;
+        background-color: gray;
+      }
+      
+      .formulario input:focus{
+        background-color:gainsboro;
+        transform: scale(1.05);
+        transition: .3s;
+      }
+      
+      .parrafo{
+        background-color: grey;
+        padding: 8px;
+      }
+      @keyframes cambioColor{
+        0%{
+          background-color:red
+        }
+      
+        25%{
+          background-color: orange
+        }
+      
+        50%{
+          background-color: yellow;
+        }
+      
+        100%{
+          background-color: green;
+        }
+      }
+      
+      @media screen and (max-width: 768px) {
+        .nav {
+          flex-direction: row;
+        }
+      
+        .nav ul {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+      
+        .main .tituloTabla {
+          flex-direction: column;
+          flex-wrap: wrap;
+          display: block;
+        }
+      
+        .main .datosTabla {
+          flex-direction: column;
+          flex-wrap: wrap;
+          display: block;
+        }  
+      
+        .imagenes {
+          flex-direction: column;
+          flex-wrap: wrap;
+          display: block;
+        }
+      }
+    }

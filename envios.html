@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Envios, Pais, Direccion, Ciudad" />
+    <meta
+      name="description"
+      content="Para que podamos enviarte tu pedido, rellena este formulario con tus datos para asi seguir con tu proceso de compra"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="./imagenes/logo.jpg" />
+    <title>Envios</title>
+  </head>
+  <body class="envios">
+    <!--HEADER: Encabezado-->
+    <header class="header grid">
+      <nav class="nav grid">
+        <ul class="animate__animated animate__rubberBand">
+          <li>
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./envios.html">Envios</a>
+          </li>
+          <li>
+            <a href="./quienes-somos.html">Quienes somos?</a>
+          </li>
+          <li>
+            Productos:
+            <ol>
+              <li>Remeras</li>
+              <li>Buzos</li>
+              <li>Zapatillas</li>
+              <li>Pantalones</li>
+            </ol>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <!--Main-->
+    <main class="main">
+      <form action="#" method="post" class="formulario">
+        <input type="text" placeholder="Calle" name="calle" />
+        <br /><br />
+        <input
+          type="text"
+          placeholder="Numero de calle"
+          name="numero-de-calle"
+        />
+        <br /><br />
+        <input type="text" placeholder="Ciudad" name="ciudad" />
+        <br /><br />
+        <input type="text" placeholder="Codigo Postal" name="codigo-postal" />
+        <br /><br />
+        <input
+          type="text"
+          placeholder="Informacion Adicional"
+          name="informacion-adicional"
+        />
+        <br />
+        <textarea
+          name="informacion-adicional"
+          id="#"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <br />
+        <select name="pais">
+          <option value="seleccion">Seleccione su pais</option>
+          <option value="Arg">Argentina</option>
+          <option value="Cl">Chile</option>
+          <option value="Brasil">Brasil</option>
+        </select>
+        <br /><br />
+        <input type="submit" />
+        <input type="reset" value="Borrame todo" />
+      </form>
+    </main>
+      <!--Footer-->
+      <footer class="footer">
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+        </ul>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="email, genero, contacto, novedades" />
+    <meta
+      name="description"
+      content="Por cualquier duda que surja o quieras preguntarnos, no dudes en contactarnos por nuestras redes sociales"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="./imagenes/logo.jpg" />
+    <title>Contacto</title>
+  </head>
+  <body class="contacto">
+    <!-- HEADER: Encabezado  -->
+    <header class="header grid">
+      <nav class="nav grid">
+        <ul class="animate__animated animate__rubberBand">
+          <li>
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./envios.html">Envios</a>
+          </li>
+          <li>
+            <a href="./quienes-somos.html">Quienes somos?</a>
+          </li>
+          <li>
+            Productos:
+            <ol>
+              <li>Remeras</li>
+              <li>Buzos</li>
+              <li>Zapatillas</li>
+              <li>Pantalones</li>
+            </ol>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <!--Main-->
+    <main class="main">
+      <form action="#" method="post" class="formulario">
+        <input
+          type="text"
+          placeholder="Nombre completo"
+          name="nombre-completo"
+        />
+        <br /><br />
+        <input type="email" placeholder="santino@gmail.com" />
+        <br /><br />
+        <!--Checkbox  -->
+        <label>
+          <input type="checkbox" />
+          <span>Recibir novedades sobre nuestros productos</span>
+        </label>
+        <br /><br />
+        <label>
+          <span>Hombre</span>
+          <input type="radio" name="sexo" value="hombre" />
+
+          <span>Mujer</span>
+          <input type="radio" name="sexo" value="mujer" />
+
+          <span>Otros</span>
+          <input type="radio" name="sexo" value="otro" />
+        </label>
+        <br /><br />
+        <select name="pais">
+          <option value="seleccion">Seleccione su pais</option>
+          <option value="Arg">Argentina</option>
+          <option value="Cl">Chile</option>
+          <option value="Brasil">Brasil</option>
+        </select>
+        <br /><br />
+        <input type="submit" />
+        <input type="reset" value="Borrame todo" />
+      </form>
+    </main>
+      <!--Footer-->
+    <footer class="footer">
+      <ul>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Twitter</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,434 @@
+* {
+  margin: o;
+  padding: 0; }
+
+.index {
+  /* 1. selector de tipo de etiqueta */
+  /* 2. Selector de tipo clase */
+  /* Selector de tipo ID */
+  /*nomenclatura.
+    1. camelcase = LetraGrandeOscura
+    2. snake_case = Letra_grande_oscura
+    3. kebab-case = letra-grande-oscura 
+     */
+  /* ---------- CONTACTO HTML------------ */ }
+  .index .grid {
+    display: grid;
+    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    background-color: grey; }
+  .index .header {
+    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
+    background-position: center;
+    background-size: cover; }
+  .index .main {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    grid-area: main;
+    flex-wrap: wrap;
+    min-width: 300px;
+    align-content: stretch; }
+  .index .tabla {
+    display: flex;
+    align-content: center; }
+  .index .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    grid-area: nav;
+    width: min-content;
+    animation-name: cambioColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+  .index ul li {
+    color: black;
+    margin: 8px; }
+  .index .tituloTabla {
+    color: black;
+    background-color: wheat;
+    font-size: 25px;
+    padding: 5px; }
+  .index .img-tabla {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center;
+    width: 500px; }
+  .index .imagenes {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .index .footer {
+    background-color: gainsboro;
+    color: lightblue;
+    padding: 10px;
+    font-weight: bolder;
+    grid-area: footer; }
+  .index .datosTabla {
+    padding: 8px;
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .index .formulario {
+    padding: 8px;
+    background-color: gray; }
+  .index .formulario input:focus {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    transition: .3s; }
+  .index .parrafo {
+    background-color: grey;
+    padding: 8px; }
+
+@keyframes cambioColor {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  50% {
+    background-color: yellow; }
+  100% {
+    background-color: green; } }
+  @media screen and (max-width: 768px) {
+    .index .nav {
+      flex-direction: row; }
+    .index .nav ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+    .index .main .tituloTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .index .main .datosTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .index .imagenes {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; } }
+
+.contacto {
+  /* 2. Selector de tipo clase */
+  /* Selector de tipo ID */
+  /*nomenclatura.
+      1. camelcase = LetraGrandeOscura
+      2. snake_case = Letra_grande_oscura
+      3. kebab-case = letra-grande-oscura 
+       */
+  /* ---------- CONTACTO HTML------------ */ }
+  .contacto h1 {
+    background-color: cadetblue; }
+  .contacto .grid {
+    display: grid;
+    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    background-color: grey; }
+  .contacto .header {
+    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
+    background-position: center;
+    background-size: cover; }
+  .contacto .main {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    grid-area: main;
+    flex-wrap: wrap;
+    min-width: 300px;
+    align-content: stretch; }
+  .contacto .tabla {
+    display: flex;
+    align-content: center; }
+  .contacto .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    grid-area: nav;
+    width: min-content;
+    animation-name: cambioColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+  .contacto ul li {
+    color: black;
+    margin: 8px; }
+  .contacto .tituloTabla {
+    color: black;
+    background-color: wheat;
+    font-size: 25px;
+    padding: 5px; }
+  .contacto .img-tabla {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center;
+    width: 500px; }
+  .contacto .imagenes {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .contacto .footer {
+    background-color: gainsboro;
+    color: lightblue;
+    padding: 10px;
+    font-weight: bolder;
+    grid-area: footer; }
+  .contacto .datosTabla {
+    padding: 8px;
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .contacto .formulario {
+    padding: 8px;
+    background-color: gray; }
+  .contacto .formulario input:focus {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    transition: .3s; }
+  .contacto .parrafo {
+    background-color: grey;
+    padding: 8px; }
+
+@keyframes cambioColor {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  50% {
+    background-color: yellow; }
+  100% {
+    background-color: green; } }
+  @media screen and (max-width: 768px) {
+    .contacto .nav {
+      flex-direction: row; }
+    .contacto .nav ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+    .contacto .main .tituloTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .contacto .main .datosTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .contacto .imagenes {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; } }
+
+.quienes-somos {
+  /* 2. Selector de tipo clase */
+  /* Selector de tipo ID */
+  /*nomenclatura.
+      1. camelcase = LetraGrandeOscura
+      2. snake_case = Letra_grande_oscura
+      3. kebab-case = letra-grande-oscura 
+       */
+  /* ---------- CONTACTO HTML------------ */ }
+  .quienes-somos h1 {
+    background-color: cadetblue; }
+  .quienes-somos .grid {
+    display: grid;
+    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    background-color: grey; }
+  .quienes-somos .header {
+    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
+    background-position: center;
+    background-size: cover; }
+  .quienes-somos .main {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    grid-area: main;
+    flex-wrap: wrap;
+    min-width: 300px;
+    align-content: stretch; }
+  .quienes-somos .tabla {
+    display: flex;
+    align-content: center; }
+  .quienes-somos .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    grid-area: nav;
+    width: min-content;
+    animation-name: cambioColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+  .quienes-somos ul li {
+    color: black;
+    margin: 8px; }
+  .quienes-somos .tituloTabla {
+    color: black;
+    background-color: wheat;
+    font-size: 25px;
+    padding: 5px; }
+  .quienes-somos .img-tabla {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center;
+    width: 500px; }
+  .quienes-somos .imagenes {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .quienes-somos .footer {
+    background-color: gainsboro;
+    color: lightblue;
+    padding: 10px;
+    font-weight: bolder;
+    grid-area: footer; }
+  .quienes-somos .datosTabla {
+    padding: 8px;
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .quienes-somos .formulario {
+    padding: 8px;
+    background-color: gray; }
+  .quienes-somos .formulario input:focus {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    transition: .3s; }
+  .quienes-somos .parrafo {
+    background-color: grey;
+    padding: 8px; }
+
+@keyframes cambioColor {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  50% {
+    background-color: yellow; }
+  100% {
+    background-color: green; } }
+  @media screen and (max-width: 768px) {
+    .quienes-somos .nav {
+      flex-direction: row; }
+    .quienes-somos .nav ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+    .quienes-somos .main .tituloTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .quienes-somos .main .datosTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .quienes-somos .imagenes {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; } }
+
+.envios {
+  /* 2. Selector de tipo clase */
+  /* Selector de tipo ID */
+  /*nomenclatura.
+      1. camelcase = LetraGrandeOscura
+      2. snake_case = Letra_grande_oscura
+      3. kebab-case = letra-grande-oscura 
+       */
+  /* ---------- CONTACTO HTML------------ */ }
+  .envios h1 {
+    background-color: cadetblue; }
+  .envios .grid {
+    display: grid;
+    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    background-color: grey; }
+  .envios .header {
+    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
+    background-position: center;
+    background-size: cover; }
+  .envios .main {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    grid-area: main;
+    flex-wrap: wrap;
+    min-width: 300px;
+    align-content: stretch; }
+  .envios .tabla {
+    display: flex;
+    align-content: center; }
+  .envios .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    grid-area: nav;
+    width: min-content;
+    animation-name: cambioColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+  .envios ul li {
+    color: black;
+    margin: 8px; }
+  .envios .tituloTabla {
+    color: black;
+    background-color: wheat;
+    font-size: 25px;
+    padding: 5px; }
+  .envios .img-tabla {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center;
+    width: 500px; }
+  .envios .imagenes {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .envios .footer {
+    background-color: gainsboro;
+    color: lightblue;
+    padding: 10px;
+    font-weight: bolder;
+    grid-area: footer; }
+  .envios .datosTabla {
+    padding: 8px;
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .envios .formulario {
+    padding: 8px;
+    background-color: gray; }
+  .envios .formulario input:focus {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    transition: .3s; }
+  .envios .parrafo {
+    background-color: grey;
+    padding: 8px; }
+
+@keyframes cambioColor {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  50% {
+    background-color: yellow; }
+  100% {
+    background-color: green; } }
+  @media screen and (max-width: 768px) {
+    .envios .nav {
+      flex-direction: row; }
+    .envios .nav ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+    .envios .main .tituloTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .envios .main .datosTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .envios .imagenes {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; } }

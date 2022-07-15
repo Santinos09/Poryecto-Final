@@ -1,0 +1,6 @@
+agregue las keywords en el index con los productos que son vendidos en la pagina
+agregue las keywords en contacto con palabras como email, novedades ya que es lo que se pide en esta seccion para contactarse
+agregue las keywords en envios con algunos de los datos personales que se piden para realizar la entrega del producto
+cambie el titulo del index por marca de la ropa que se vende en la pagina 
+cambie el titulo de contacto y envios, solo le agregue el nombre de la marca y seguido va el nombre de la seccion
+le agregue una descripcion breve a las 3 secciones (index, contacto y envios) para saber de que se esta hablando
