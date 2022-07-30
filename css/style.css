@@ -14,12 +14,8 @@
   /* ---------- CONTACTO HTML------------ */ }
   .index .grid {
     display: grid;
-    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     background-color: grey; }
-  .index .header {
-    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
-    background-position: center;
-    background-size: cover; }
   .index .main {
     display: flex;
     flex-direction: column;
@@ -27,6 +23,7 @@
     grid-area: main;
     flex-wrap: wrap;
     min-width: 300px;
+    min-height: 100vh;
     align-content: stretch; }
   .index .tabla {
     display: flex;
@@ -122,12 +119,8 @@
     background-color: cadetblue; }
   .contacto .grid {
     display: grid;
-    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     background-color: grey; }
-  .contacto .header {
-    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
-    background-position: center;
-    background-size: cover; }
   .contacto .main {
     display: flex;
     flex-direction: column;
@@ -135,6 +128,7 @@
     grid-area: main;
     flex-wrap: wrap;
     min-width: 300px;
+    min-height: 100vh;
     align-content: stretch; }
   .contacto .tabla {
     display: flex;
@@ -230,12 +224,8 @@
     background-color: cadetblue; }
   .quienes-somos .grid {
     display: grid;
-    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     background-color: grey; }
-  .quienes-somos .header {
-    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
-    background-position: center;
-    background-size: cover; }
   .quienes-somos .main {
     display: flex;
     flex-direction: column;
@@ -243,6 +233,7 @@
     grid-area: main;
     flex-wrap: wrap;
     min-width: 300px;
+    min-height: 100vh;
     align-content: stretch; }
   .quienes-somos .tabla {
     display: flex;
@@ -273,7 +264,8 @@
   .quienes-somos .imagenes {
     background-color: wheat;
     font-size: 23px;
-    text-align: center; }
+    text-align: center;
+    width: 20px; }
   .quienes-somos .footer {
     background-color: gainsboro;
     color: lightblue;
@@ -338,12 +330,8 @@
     background-color: cadetblue; }
   .envios .grid {
     display: grid;
-    grid-template-areas: "nav header header" "main main main" "footer footer footer";
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     background-color: grey; }
-  .envios .header {
-    background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
-    background-position: center;
-    background-size: cover; }
   .envios .main {
     display: flex;
     flex-direction: column;
@@ -351,6 +339,7 @@
     grid-area: main;
     flex-wrap: wrap;
     min-width: 300px;
+    min-height: 100vh;
     align-content: stretch; }
   .envios .tabla {
     display: flex;
@@ -429,6 +418,111 @@
       flex-wrap: wrap;
       display: block; }
     .envios .imagenes {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; } }
+
+.productos {
+  /* 2. Selector de tipo clase */
+  /* Selector de tipo ID */
+  /*nomenclatura.
+      1. camelcase = LetraGrandeOscura
+      2. snake_case = Letra_grande_oscura
+      3. kebab-case = letra-grande-oscura 
+       */
+  /* ---------- CONTACTO HTML------------ */ }
+  .productos h1 {
+    background-color: cadetblue; }
+  .productos .grid {
+    display: grid;
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+    background-color: grey; }
+  .productos .main {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    grid-area: main;
+    flex-wrap: wrap;
+    min-width: 300px;
+    min-height: 100vh;
+    align-content: stretch; }
+  .productos .tabla {
+    display: flex;
+    align-content: center; }
+  .productos .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    grid-area: nav;
+    width: min-content;
+    animation-name: cambioColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+  .productos ul li {
+    color: black;
+    margin: 8px; }
+  .productos .tituloTabla {
+    color: black;
+    background-color: wheat;
+    font-size: 25px;
+    padding: 5px; }
+  .productos .img-tabla {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center;
+    width: 500px; }
+  .productos .imagenes {
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .productos .footer {
+    background-color: gainsboro;
+    color: lightblue;
+    padding: 10px;
+    font-weight: bolder;
+    grid-area: footer; }
+  .productos .datosTabla {
+    padding: 8px;
+    background-color: wheat;
+    font-size: 23px;
+    text-align: center; }
+  .productos .formulario {
+    padding: 8px;
+    background-color: gray; }
+  .productos .formulario input:focus {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    transition: .3s; }
+  .productos .parrafo {
+    background-color: grey;
+    padding: 8px; }
+
+@keyframes cambioColor {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  50% {
+    background-color: yellow; }
+  100% {
+    background-color: green; } }
+  @media screen and (max-width: 768px) {
+    .productos .nav {
+      flex-direction: row; }
+    .productos .nav ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+    .productos .main .tituloTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .productos .main .datosTabla {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: block; }
+    .productos .imagenes {
       flex-direction: column;
       flex-wrap: wrap;
       display: block; } }

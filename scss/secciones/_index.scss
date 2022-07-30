@@ -4,16 +4,12 @@
     .grid {
       display: grid;
       grid-template-areas:
-        "nav header header"
+        "nav nav nav"
         "main main main"
         "footer footer footer";
       background-color: grey;
     }
-    .header {
-      background-image: url(https://e7.pngegg.com/pngimages/641/818/png-clipart-swoosh-nike-just-do-it-logo-a-letter-logo-logo-computer-wallpaper.png);
-      background-position: center;
-      background-size: cover;
-    }
+    
     
     .main {
       display: flex;
@@ -22,6 +18,7 @@
         grid-area: main;
         flex-wrap: wrap;
         min-width: 300px;
+        min-height: 100vh;
         align-content: stretch;
     }
     
