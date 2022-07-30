@@ -22,10 +22,12 @@
         min-height: 100vh;
         align-content: stretch;
       }
+
       
       .tabla{
         display: flex;
         align-content: center;
+        height: max-content;
       }
       
       .nav{
@@ -48,8 +50,10 @@
       /* 2. Selector de tipo clase */
       .tituloTabla {
         color: black;
+        border: 10px;
+        border-color: black;
         background-color: wheat;
-        font-size: 25px;
+        font-size: 30px;
         padding: 5px;
       }
       
@@ -135,6 +139,7 @@
         }
       
         .main .tituloTabla {
+          text-align: center;
           flex-direction: column;
           flex-wrap: wrap;
           display: block;

@@ -11,11 +11,15 @@
         background-color: grey;
       }
       
-      
+      .formulario{
+        text-align: center; 
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
       .main {
         display: flex;
         flex-direction: column;
-        background-color: gray;
+        background-color: black;
         grid-area: main;
         flex-wrap: wrap;
         min-width: 300px;
@@ -92,11 +96,15 @@
       /* ---------- CONTACTO HTML------------ */
       .formulario{
         padding: 8px;
-        background-color: gray;
+        background-color: black;
       }
       
+      .formulario input{
+        border-radius: 10px;
+        background-color: lightblue;
+      }
       .formulario input:focus{
-        background-color:gainsboro;
+        background-color:lightblue;
         transform: scale(1.05);
         transition: .3s;
       }
